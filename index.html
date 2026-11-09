@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SkillBridge | Student Collaboration</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav class="navbar">
+
+        <h2>SkillBridge.</h2>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#skills">Skill Exchange</a>
+            <a href="#helploop">HelpLoop</a>
+        </div>
+
+    </nav>
+
+
+    <!-- HERO SECTION -->
+
+    <section class="welcome" id="home">
+
+        <h1>Learn Together. Grow Together.</h1>
+
+        <p>
+            Connect with students, exchange knowledge
+            and solve problems together.
+        </p>
+
+        <a href="#skills" class="hero-btn">
+            Explore Skills →
+        </a>
+
+    </section>
+
+
+    <!-- ACTION CARDS -->
+
+    <section class="actions">
+
+        <div class="card">
+
+            <span class="icon">🎓</span>
+
+            <h2>Teach a Skill</h2>
+
+            <p>
+                Share your knowledge and help
+                another student grow.
+            </p>
+
+            <a href="#skills">
+                Start Teaching →
+            </a>
+
+        </div>
+
+
+        <div class="card">
+
+            <span class="icon">💡</span>
+
+            <h2>Learn a Skill</h2>
+
+            <p>
+                Discover new skills from
+                talented students.
+            </p>
+
+            <a href="#skills">
+                Start Learning →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- SKILL EXCHANGE -->
+
+    <section class="section" id="skills">
+
+        <div class="section-heading">
+
+            <span>01 / SKILL COMMUNITY</span>
+
+            <h2>Skill Exchange</h2>
+
+            <p>
+                Everyone knows something.
+                Everyone has something to learn.
+            </p>
+
+        </div>
+
+
+        <!-- ADD SKILL FORM -->
+
+        <div class="form-container">
+
+            <h3>Share Your Skills</h3>
+
+            <div class="form-grid">
+
+                <input
+                    type="text"
+                    id="studentName"
+                    placeholder="Your name"
+                >
+
+                <input
+                    type="text"
+                    id="department"
+                    placeholder="Department (ECE, CSE...)"
+                >
+
+                <select id="year">
+                    <option value="">Select year</option>
+                    <option value="1st Year">1st Year</option>
+                    <option value="2nd Year">2nd Year</option>
+                    <option value="3rd Year">3rd Year</option>
+                    <option value="4th Year">4th Year</option>
+                </select>
+
+
+                <select id="skillType">
+
+                    <option value="Teach">I can teach</option>
+
+                    <option value="Learn">I want to learn</option>
+
+                </select>
+
+
+                <input
+                    type="text"
+                    id="skillName"
+                    placeholder="Skill name"
+                >
+
+                <input
+                    type="text"
+                    id="skillDescription"
+                    placeholder="Short description"
+                >
+
+            </div>
+
+            <button id="addSkillBtn">
+                + Publish Skill
+            </button>
+
+        </div>
+
+
+        <!-- SEARCH -->
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="skillSearch"
+                placeholder="🔍 Search C, Python, PCB Design..."
+            >
+
+            <select id="skillFilter">
+
+                <option value="All">All Skills</option>
+
+                <option value="Teach">Teaching</option>
+
+                <option value="Learn">Learning</option>
+
+            </select>
+
+        </div>
+
+
+        <!-- SKILL CARDS -->
+
+        <div id="skillList" class="skill-list"></div>
+
+    </section>
+
+
+
+    <!-- HELPLOOP -->
+
+    <section class="section helploop-section" id="helploop">
+
+        <div class="section-heading">
+
+            <span>02 / STUDENT SUPPORT</span>
+
+            <h2>HelpLoop</h2>
+
+            <p>
+                Stuck with something?
+                Your fellow students might have the answer.
+            </p>
+
+        </div>
+
+
+        <!-- QUESTION FORM -->
+
+        <div class="form-container">
+
+            <h3>Ask the Community</h3>
+
+            <input
+                type="text"
+                id="questionName"
+                placeholder="Your name"
+            >
+
+            <input
+                type="text"
+                id="questionTitle"
+                placeholder="What do you need help with?"
+            >
+
+            <textarea
+                id="questionDescription"
+                placeholder="Explain your problem..."
+                rows="4"
+            ></textarea>
+
+            <button id="postQuestionBtn">
+                + Post Question
+            </button>
+
+        </div>
+
+
+        <!-- QUESTIONS -->
+
+        <div id="questionList" class="question-list"></div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h2>SkillBridge.</h2>
+
+        <p>Learn. Teach. Connect.</p>
+
+        <p>Built for students, by students.</p>
+
+    </footer>
+
+
+</body>
+</html>
